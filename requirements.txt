@@ -1,0 +1,13 @@
+fastapi
+uvicorn[standard]
+python-dotenv
+apscheduler
+twilio
+httpx
+websockets
+sqlalchemy
+google-api-python-client
+google-auth-httplib2
+google-auth-oauthlib
+pytest
+pytest-asyncio
