@@ -1,29 +1,93 @@
+@"
+# Environment / secrets
 .env
+.env.*
+.envrc
 .venv/
 venv/
 env/
+ENV/
+env.bak/
+venv.bak/
 
+# Python cache
 __pycache__/
 *.py[cod]
 *.pyo
+*$py.class
+*.so
 
+# Testing / coverage
 .pytest_cache/
 .coverage
+.coverage.*
 htmlcov/
+.tox/
+.nox/
+.hypothesis/
+.cache/
+.ruff_cache/
 
+# IDE / editors
 .vscode/
 .idea/
+.spyderproject
+.spyproject
+.ropeproject
 
+# Logs
 logs/
 *.log
 
+# Databases / local state
 *.db
 *.sqlite
 *.sqlite3
+db.sqlite3-journal
 
+# Credentials / authentication
 credentials/*.json
 credentials/*.pickle
 credentials/*.token
 
+# Build / packaging
+build/
+dist/
+develop-eggs/
+downloads/
+eggs/
+.eggs/
+*.egg-info/
+*.egg
+MANIFEST
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Jupyter
+.ipynb_checkpoints
+
+# mypy / type checking
+.mypy_cache/
+.dmypy.json
+dmypy.json
+.pyre/
+.pytype/
+
+# Local application files
+instance/
+tempCodeRunnerFile.py
+
+# OS
 .DS_Store
 Thumbs.db
+
+# Other tools
+.streamlit/secrets.toml
+.pdm-python
+.pdm-build/
+.pixi
+__pypackages__/
+.abstra/
+"@ | Set-Content .gitignore
